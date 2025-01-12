@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Enterprise | Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="form-container">
+        <div class="sign-up-image">
+            <h1>MARS ENTERPRISE</h1>
+            <h5>Image by Visual Electric</h5>
+        </div>
+        <div>
+            <form action="#" method="post" class="sign-up-form">
+                <h2>Sign up for your mission</h2>
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phoneNumber">Phone Number (optional)</label>
+                    <input type="text" id="phoneNumber">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input  
+                        type="password" 
+                        id="password" 
+                        required 
+                        pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" 
+                        title="Password must contain at least one letter, one number, and be at least 8 characters long">
+                    <span class="input-guidance">Must contain at least one letter, one number and 8 characters long</span>
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password</label>
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        required
+                        title="Passwrods must match">
+                    <span class="input-guidance"> Must match the password</span>
+                </div>
+                <div class="form-group">
+                    <button type="submit">SIGN UP</button>
+                    <p>Already have an account? <span class="hyperlink"><a href="#">Log in</a></span></p>
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
